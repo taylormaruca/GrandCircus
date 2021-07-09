@@ -1,0 +1,37 @@
+body{
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+main {
+    background-color: #ee7779;
+    color: #8b8b8b;
+}
+
+/* h1 {
+    color: #8b8b8b
+} */
+
+form {
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+
+input[type="text"],
+input[type="password"] {
+    background-color: white;
+    border: 1px solid lightgray;
+    width: 100px;
+    display: block;
+}
+
+button {
+    background-color: #7bd9d5;
+    size: 40px;
+    display: block;
+}
+
+input[type="checkbox"] {
+    display: block;
+}

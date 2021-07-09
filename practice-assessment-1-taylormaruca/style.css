@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.background {
+    display: flex;
+    height: 100%;
+}
+
+.red_container {
+    flex: 0 0 33%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}   
+
+/* centering the "My Form" text */
+h2 {
+    text-align: center;
+}
+
+/* styling for form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 220px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* styling for first line in form */
+#input1 {
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* styling for second line in form */
+#input2 {
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* styling for submit button */
+button {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.black_container {
+    flex: 0 0 66%;
+    background-color: black;
+    position: relative;
+
+}
+
+/* positioning for bullseye */
+.bullseye {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* styling for largest circle */
+.outer {
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+/* styling for middle circle */
+.middle {
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(25%, 25%);
+}
+
+/* styling for smallest circle */
+.inner {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+    transform: translate(50%, 50%);
+}
+
+/* for mobile devices */
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .background {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .red_container {
+        width: 100vw;
+        background-color: red;
+        flex: 0 0 33%;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+
+    .black_container {
+        width: 100vw;
+        background-color: black;
+    }
+}
+
+
