@@ -59,6 +59,37 @@ function printSquare (width) {
 }
 printSquare(width);
 
+let width = prompt("Please enter the width of the triangle");
+function printTriangle(width) {
+    let triangle = "";
+    for (var i = 1; i <= width; i++) {
+      for (var j = 1; j <= i; j++) {
+        triangle += "#";
+      }
+      triangle += "\n";
+    }
+    return triangle;
+  }
+  console.log(printTriangle(width));
+
+let urgent = prompt("Enter true if urgent, otherwise enter false");
+let important = prompt("Enter true if important, otherwise enter false");
+function prioritize (urgent, important) {
+    if (urgent === true && important === true) {
+        return 1;
+    }
+    else if (urgent === false && important === true) {
+        return 2;
+    }
+    else if (urgent === true && important === false) {
+        return 3;
+    }
+    else {
+        return 4;
+    }
+}
+console.log(prioritize(urgent, important));
+
 let number = prompt("Please enter a number between 1 and 100");
 function getGrade (number) {
     if (number >= 90) {
