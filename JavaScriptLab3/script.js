@@ -107,6 +107,7 @@ const filter90AndAbove = (array) => {
 //console.log(filter90AndAbove(submissions));
 
 function findSubmissionByState(array, state){
-    return array.filter(item => item.address.state === state);
+    array.filter(item => item.address === address);
+    array.filter(address => address.state === state);
   }
-console.log(findSubmissionByState(submissions, "WI"));
+console.log(findSubmissionByState(submissions, "MI"));
