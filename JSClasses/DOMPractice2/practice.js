@@ -79,6 +79,7 @@ hide.addEventListener('click', () => {
     secret.style.display = 'none';
 });
 
+
 const q15 = document.getElementById('add-calc-button');
 
 q15.addEventListener('click', () => {
